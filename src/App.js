@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Comp9UseMemo from "./Components/Comp9UseMemo";
+import Comp10UseCallback from './Components/Comp10UseCallback';
+import Com12CustomHook from './Components/Com12CustomHook';
+import Comp13CustomHook from './Components/Comp13CustomHook';
+import Comp14CustomHook from './Components/Com14CustomHook'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <Comp9UseMemo/>
+     <hr/>
+     <Comp10UseCallback/>
+     <hr/>
+     <Com12CustomHook/>
+     <Comp13CustomHook/>
+     <hr/>
+<Comp14CustomHook/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
